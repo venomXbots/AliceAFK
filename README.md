@@ -1,5 +1,5 @@
-      𝐀𝐥𝐢𝐜𝐞𝘼𝙁𝙆-𝐁𝐨𝐭
-<p align="center"><img src="https://telegra.ph/file/b528d894684d8583b00aa.jpg" alt="ICON" width="650" height="450"/></p>
+                               𝐀𝐥𝐢𝐜𝐞𝘼𝙁𝙆-𝐁𝐨𝐭
+<p align="center"><img src="https://telegra.ph/file/b528d894684d8583b00aa.jpg" alt="ICON" width="600" height="450"/></p>
 
 <h4 align="center">
     First ever pyrogram based public sourced AFK Bot on Telegram and Github.
