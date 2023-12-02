@@ -1,9 +1,9 @@
 #
-# Copyright (C) 2021-2022 by TeamInflex@Github, < https://github.com/TeamInflex >.
+# Copyright (C) 2021-2022 by venomXbots@Github, < https://github.com/TeamInflex >.
 #
-# This file is part of < https://github.com/TeamInflex/InflexAFKBot > project,
+# This file is part of < https://github.com/venomXbots/AliceAFK > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamInflex/InflexAFKBot/blob/master/LICENSE >
+# Please see < https://github.com/venomXbots/AliceAFK/blob/master/LICENSE >
 #
 # All rights reserved.
 
@@ -13,9 +13,9 @@ import time
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Inflex import app, botid, botname, botusername
-from Inflex.database import add_served_chat, is_afk, remove_afk
-from Inflex.helpers import get_readable_time, put_cleanmode
+from Alice import app, botid, botname, botusername
+from Alice.database import add_served_chat, is_afk, remove_afk
+from Alice.helpers import get_readable_time, put_cleanmode
 
 chat_watcher_group = 1
 
@@ -50,33 +50,33 @@ async def chat_watcher_func(_, message):
             reasonafk = reasondb["reason"]
             seenago = get_readable_time((int(time.time() - timeafk)))
             if afktype == "text":
-                msg += f"**{user_name[:25]}** is back online and was away for {seenago}\n\n"
+                msg += f"**{user_name[:25]}** ɪs ʙᴀᴄᴋ ᴏɴʟɪɴᴇ ᴀɴᴅ ᴡᴀs ᴀᴡᴀʏ ғᴏʀ {seenago}\n\n"
             if afktype == "text_reason":
-                msg += f"**{user_name[:25]}** is back online and was away for {seenago}\n\nReason: `{reasonafk}`\n\n"
+                msg += f"**{user_name[:25]}** ɪs ʙᴀᴄᴋ ᴏɴʟɪɴᴇ ᴀɴᴅ ᴡᴀs ᴀᴡᴀʏ ғᴏʀ {seenago}\n\nReason: `{reasonafk}`\n\n"
             if afktype == "animation":
                 if str(reasonafk) == "None":
                     send = await message.reply_animation(
                         data,
-                        caption=f"**{user_name[:25]}** is back online and was away for {seenago}\n\n",
+                        caption=f"**{user_name[:25]}** ɪs ʙᴀᴄᴋ ᴏɴʟɪɴᴇ ᴀɴᴅ ᴡᴀs ᴀᴡᴀʏ ғᴏʀ {seenago}\n\n",
                     )
                 else:
                     send = await message.reply_animation(
                         data,
-                        caption=f"**{user_name[:25]}** is back online and was away for {seenago}\n\nReason: `{reasonafk}`\n\n",
+                        caption=f"**{user_name[:25]}** ɪs ʙᴀᴄᴋ ᴏɴʟɪɴᴇ ᴀɴᴅ ᴡᴀs ᴀᴡᴀʏ ғᴏʀ {seenago}\n\nReason: `{reasonafk}`\n\n",
                     )
             if afktype == "photo":
                 if str(reasonafk) == "None":
                     send = await message.reply_photo(
                         photo=f"downloads/{userid}.jpg",
-                        caption=f"**{user_name[:25]}** is back online and was away for {seenago}\n\n",
+                        caption=f"**{user_name[:25]}** ɪs ʙᴀᴄᴋ ᴏɴʟɪɴᴇ ᴀɴᴅ ᴡᴀs ᴀᴡᴀʏ ғᴏʀ {seenago}\n\n",
                     )
                 else:
                     send = await message.reply_photo(
                         photo=f"downloads/{userid}.jpg",
-                        caption=f"**{user_name[:25]}** is back online and was away for {seenago}\n\nReason: `{reasonafk}`\n\n",
+                        caption=f"**{user_name[:25]}** ɪs ʙᴀᴄᴋ ᴏɴʟɪɴᴇ ᴀɴᴅ ᴡᴀs ᴀᴡᴀʏ ғᴏʀ {seenago}\n\nReason: `{reasonafk}`\n\n",
                     )
         except:
-            msg += f"**{user_name[:25]}** is back online\n\n"
+            msg += f"**{user_name[:25]}** ɪs ʙᴀᴄᴋ ᴏɴʟɪɴᴇ\n\n"
         
     # Replied to a User which is AFK
     if message.reply_to_message:
@@ -255,7 +255,7 @@ async def welcome(_, message: Message):
         try:
             if member.id == botid:
                 send =  await message.reply_text(
-                    f"ᴛʜᴀɴᴋꜱ ꜰᴏʀ ʜᴀᴠɪɴɢ ᴍᴇ ɪɴ {message.chat.title}\n\n{botname} ɪꜱ ᴀʟɪᴠᴇ.\n\nꜰᴏʀ ᴀɴʏ ᴀꜱꜱɪꜱᴛᴀɴᴄᴇ ᴏʀ ʜᴇʟᴘ, ᴄʜᴇᴄᴋᴏᴜᴛ ᴏᴜʀ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ ᴀɴᴅ ᴄʜᴀɴɴᴇʟ.\n\n๏ Uᴘᴅᴀᴛᴇꜱ :- @InflexUpdates\n๏ Sᴜᴘᴘᴏʀᴛ :- @InflexSupport"
+                    f"ᴛʜᴀɴᴋꜱ ꜰᴏʀ ʜᴀᴠɪɴɢ ᴍᴇ ɪɴ {message.chat.title}\n\n{botname} ɪꜱ ᴀʟɪᴠᴇ.\n\nꜰᴏʀ ᴀɴʏ ᴀꜱꜱɪꜱᴛᴀɴᴄᴇ ᴏʀ ʜᴇʟᴘ, ᴄʜᴇᴄᴋᴏᴜᴛ ᴏᴜʀ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ ᴀɴᴅ ᴄʜᴀɴɴᴇʟ.\n\n๏ Uᴘᴅᴀᴛᴇꜱ :- @Lily_x_bots\n๏ Sᴜᴘᴘᴏʀᴛ :- @Lily_support_chat"
                 )
                 await put_cleanmode(message.chat.id, send.message_id)
         except:
