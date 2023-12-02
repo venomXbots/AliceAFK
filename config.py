@@ -1,9 +1,9 @@
 #
-# Copyright (C) 2021-2022 by TeamInflex@Github, < https://github.com/TeamInflex >.
+# Copyright (C) 2021-2022 by venomXbots@Github, < https://github.com/venomXbots >.
 #
-# This file is part of < https://github.com/TeamInflex/InflexAFKBot > project,
+# This file is part of < https://github.com/venomXbots/AliceAFK > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamInflex/InflexAFKBot/blob/master/LICENSE >
+# Please see < https://github.com/venomXbots/AliceAFK/blob/master/LICENSE >
 #
 # All rights reserved.
 #
@@ -21,7 +21,7 @@ API_HASH = getenv("API_HASH")
 ## Get it from @Botfather in Telegram.
 BOT_TOKEN = getenv("BOT_TOKEN")
 
-# Database to save your chats and stats... Get MongoDB :- https://teams-inflex.gitbook.io/inflex-music-bot-docs/deployments/mongo-db
+# Database to save your chats and stats... Get MongoDB :-
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
 # SUDO USERS
