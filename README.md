@@ -7,14 +7,14 @@
     First ever pyrogram based public sourced AFK Bot on Telegram and Github.
 </h4>
 <p align="center">
-    <a href="https://t.me/AliceAFK_Bot"> Ready-To-Use Bot </a> •
-    <a href="https://t.me/Lily_support_chat"> Support Channel </a> •
-    <a href="https://t.me/Lily_support_chat"> Support Chat </a> 
+    <a href="https://t.me/AliceAFK_Bot"> 𝙍𝙚𝙖𝙙𝙮-𝙏𝙤-𝙐𝙨𝙚 𝘽𝙤𝙩 </a> •
+    <a href="https://t.me/Lily_support_chat"> 𝙎𝙪𝙥𝙥𝙤𝙧𝙩 𝘾𝙝𝙖𝙣𝙣𝙚𝙡 </a> •
+    <a href="https://t.me/Lily_support_chat"> 𝙎𝙪𝙥𝙥𝙤𝙧𝙩 𝘾𝙝𝙖𝙩 </a> 
 </p>
     
 
 # Alice AFK Bot
-A Powerful Telegram AFK Bot written in pyrogram using MongoDB as database and with so many interactive features.
+𝙰 𝙿𝚘𝚠𝚎𝚛𝚏𝚞𝚕 𝚃𝚎𝚕𝚎𝚐𝚛𝚊𝚖 𝙰𝙵𝙺 𝙱𝚘𝚝 𝚠𝚛𝚒𝚝𝚝𝚎𝚗 𝚒𝚗 𝚙𝚢𝚛𝚘𝚐𝚛𝚊𝚖 𝚞𝚜𝚒𝚗𝚐 𝙼𝚘𝚗𝚐𝚘𝙳𝙱 𝚊𝚜 𝚍𝚊𝚝𝚊𝚋𝚊𝚜𝚎 𝚊𝚗𝚍 𝚠𝚒𝚝𝚑 𝚜𝚘 𝚖𝚊𝚗𝚢 𝚒𝚗𝚝𝚎𝚛𝚊𝚌𝚝𝚒𝚟𝚎 𝚏𝚎𝚊𝚝𝚞𝚛𝚎𝚜.
 
 ## 🖇 Prerequisites
 
@@ -26,7 +26,7 @@ A Powerful Telegram AFK Bot written in pyrogram using MongoDB as database and wi
 
 ## 🚀 Heroku Deployment
 
-<h4>Click the button below to deploy Inflex AFK Bot on Heroku!</h4>    
+<h4>𝙲𝚕𝚒𝚌𝚔 𝚝𝚑𝚎 𝚋𝚞𝚝𝚝𝚘𝚗 𝚋𝚎𝚕𝚘𝚠 𝚝𝚘 𝚍𝚎𝚙𝚕𝚘𝚢 𝙰𝚕𝚒𝚌𝚎 𝙰𝙵𝙺 𝙱𝚘𝚝 𝚘𝚗 𝙷𝚎𝚛𝚘𝚔𝚞!</h4>    
 <a href="https://dashboard.heroku.com/new?template=https://github.com/venomXbots/AliceAFK"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a>
 
 ## 🖇 VPS Deployment
@@ -37,14 +37,14 @@ Alice@MacBook~ $ cd InflexAFKBot
 Alice@MacBook~ $ pip3 install -r requirements.txt
 Alice@MacBook~ $ mv sample.env .env
 ```
-> Edit .env with your values and then start bot with
+> Edit .env 𝚠𝚒𝚝𝚑 𝚢𝚘𝚞𝚛 𝚟𝚊𝚕𝚞𝚎𝚜 𝚊𝚗𝚍 𝚝𝚑𝚎𝚗 𝚜𝚝𝚊𝚛𝚝 𝚋𝚘𝚝 𝚠𝚒𝚝𝚑
 
 ```console
-Inflex@MacBook~ $ python3 -m Inflex
+Alice@MacBook~ $ python3 -m Alice
 ```
 
 ## 🗂 License
 
-This project is licensed under the **GNU General Public License v3**. All designs were created by [@TeamInflex](https://github.com/venomXbots) .
+𝚃𝚑𝚒𝚜 𝚙𝚛𝚘𝚓𝚎𝚌𝚝 𝚒𝚜 𝚕𝚒𝚌𝚎𝚗𝚜𝚎𝚍 𝚞𝚗𝚍𝚎𝚛 𝚝𝚑𝚎 **GNU General Public License v3**. 𝙰𝚕𝚕 𝚍𝚎𝚜𝚒𝚐𝚗𝚜 𝚠𝚎𝚛𝚎 𝚌𝚛𝚎𝚊𝚝𝚎𝚍 𝚋𝚢 [@Lily_X_Bots](https://github.com/venomXbots) .
 
-See [LICENSE](LICENSE) for more information.
+𝚂𝚎𝚎 [LICENSE](LICENSE) 𝚏𝚘𝚛 𝚖𝚘𝚛𝚎 𝚒𝚗𝚏𝚘𝚛𝚖𝚊𝚝𝚒𝚘𝚗.
