@@ -1,9 +1,9 @@
 #
-# Copyright (C) 2021-2022 by TeamInflex@Github, < https://github.com/TeamInflex >.
+# Copyright (C) 2021-2022 by venomXbots@Github, < https://github.com/TeamInflex >.
 #
-# This file is part of < https://github.com/TeamInflex/InflexAFKBot > project,
+# This file is part of < https://github.com/venomXbots/AliceAFK > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamInflex/InflexAFKBot/blob/master/LICENSE >
+# Please see < https://github.com/venomXbots/AliceAFK/blob/master/LICENSE >
 #
 # All rights reserved.
 
@@ -15,9 +15,9 @@ from pyrogram.types import Message
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.errors import MessageNotModified
 
-from Inflex import app, boot, botname, botusername
-from Inflex.database.cleanmode import cleanmode_off, cleanmode_on, is_cleanmode_on
-from Inflex.helpers import get_readable_time, put_cleanmode, settings_markup, RANDOM, HELP_TEXT
+from Alice import app, boot, botname, botusername
+from Alice.database.cleanmode import cleanmode_off, cleanmode_on, is_cleanmode_on
+from Alice.helpers import get_readable_time, put_cleanmode, settings_markup, RANDOM, HELP_TEXT
 
 
 @app.on_message(filters.command(["start", "settings"]) & filters.group & ~filters.edited)
@@ -28,18 +28,18 @@ async def on_start(_, message: Message):
         [
             [
                 InlineKeyboardButton(
-                    text="📜 Help Section",
+                    text="🙂Help sᴇᴄᴛɪᴏɴ✅",
                     url=f"https://t.me/{botusername}?start=help",
                 ),
                 InlineKeyboardButton(
-                    text="🔧 Settings",
+                    text="⚙️sᴇᴛᴛɪɴɢs",
                     callback_data="settings_callback",
                 ),
             ]
         ]
     )
     image = random.choice(RANDOM)
-    send = await message.reply_photo(image, caption=f"Hello ! My name is {botname}.\n\nTo Know More About Me Check Help Section By /help. \n\nUpdates :- @InflexUpdates\nSupport :- @InflexSupport", reply_markup=upl)
+    send = await message.reply_photo(image, caption=f"Hello ! ᴍʏ ɴᴀᴍᴇ ɪs {botname}.\n\nTo ᴋɴᴏᴡ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍᴇ ᴄʜᴇᴄᴋ ʜᴇʟᴘ sᴇᴄᴛɪᴏɴ ʙʏ /help. \n\nUpdates :- @Lily_x_bots\nSupport :- @Lily_support_chat ", reply_markup=upl)
     await put_cleanmode(message.chat.id, send.message_id)
     
 
@@ -49,7 +49,7 @@ async def on_help(_, message: Message):
         [
             [
                 InlineKeyboardButton(
-                    text="📜 Help Section",
+                    text="🙂ʜᴇʟᴘ sᴇᴄᴛɪᴏɴ✅",
                     url=f"https://t.me/{botusername}?start=help",
                 ),
             ]
@@ -71,14 +71,14 @@ async def on_private_start(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="➕ Add me to a Group",
+                        text="💞ᴀᴅᴅ ᴍᴇ ᴛᴏ ᴀ ɢʀᴏᴜᴘ✨",
                         url=f"https://t.me/{botusername}?startgroup=true",
                     ),
                 ]
             ]
         )
         image = random.choice(RANDOM)
-        await message.reply_photo(image, caption=f"ʜᴇʟʟᴏ ! ɴᴀᴍᴇ ɪꜱ {botname}.\n\nᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍᴇ ᴄʜᴇᴄᴋ ʜᴇʟᴘ ꜱᴇᴄᴛɪᴏɴ ʙʏ /help .\n\n๏ Uᴘᴅᴀᴛᴇꜱ :- @InflexUpdates\n๏ Sᴜᴘᴘᴏʀᴛ :- @InflexSupport", reply_markup=upl)
+        await message.reply_photo(image, caption=f"ʜᴇʟʟᴏ ! ɴᴀᴍᴇ ɪꜱ {botname}.\n\nᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍᴇ ᴄʜᴇᴄᴋ ʜᴇʟᴘ ꜱᴇᴄᴛɪᴏɴ ʙʏ /help .\n\n๏ Uᴘᴅᴀᴛᴇꜱ :- @Lily_x_bots\n๏ Sᴜᴘᴘᴏʀᴛ :- @Lily_support_chat", reply_markup=upl)
 
 @app.on_message(filters.command(["help"]) & filters.private & ~filters.edited)
 async def on_private_help(_, message: Message):
@@ -91,14 +91,14 @@ async def on_close_button(client, CallbackQuery):
 
 @app.on_callback_query(filters.regex("cleanmode_answer"))
 async def on_cleanmode_button(client, CallbackQuery):
-    await CallbackQuery.answer("⁉️ What is This?\n\nWhen activated, Bot will delete its message after 5 Mins to make your chat clean and clear.", show_alert=True)
+    await CallbackQuery.answer("❔ ᴡʜᴀᴛ ɪs ᴛʜɪs?\n\nᴡʜᴇɴ ᴀᴄᴛɪᴠᴀᴛᴇᴅ, ʙᴏᴛ ᴡɪʟʟ ᴅᴇʟᴇᴛᴇ ɪᴛs ᴍᴇssᴀɢᴇ ᴀғᴛᴇʀ 5 ᴍɪɴs ᴛᴏ ᴍᴀᴋᴇ ʏᴏᴜʀ ᴄʜᴀᴛ ᴄʟᴇᴀɴ ᴀɴᴅ ᴄʟᴀʀᴇ.", show_alert=True)
 
 @app.on_callback_query(filters.regex("settings_callback"))
 async def on_settings_button(client, CallbackQuery):
     await CallbackQuery.answer()
     status = await is_cleanmode_on(CallbackQuery.message.chat.id)
     buttons = settings_markup(status)
-    return await CallbackQuery.edit_message_text(f"⚙️ **AFK Bot Settings**\n\n🖇**Group:** {CallbackQuery.message.chat.title}\n🔖**Group ID:** `{CallbackQuery.message.chat.id}`\n\n💡**Choose the function buttons from below which you want to edit or change.**", reply_markup=InlineKeyboardMarkup(buttons),)
+    return await CallbackQuery.edit_message_text(f"⚙️ **ᴀғᴋ ʙᴏᴛ sᴇᴛᴛɪɴɢs**\n\n🖇**ɢʀᴏᴜᴘ:** {CallbackQuery.message.chat.title}\n✨**ɢʀᴏᴜᴘ ɪᴅ:** `{CallbackQuery.message.chat.id}`\n\n💡**ᴄʜᴏᴏsᴇ ᴛʜᴇ ғᴜɴᴄᴛɪᴏɴ ʙᴜᴛᴛᴏɴs ғʀᴏᴍ ʙᴇʟᴏᴡ ᴡʜɪᴄʜ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴇᴅɪᴛ ᴏʀ ᴄʜᴀɴɢᴇ.**", reply_markup=InlineKeyboardMarkup(buttons),)
 
 @app.on_callback_query(filters.regex("CLEANMODE"))
 async def on_cleanmode_change(client, CallbackQuery):
