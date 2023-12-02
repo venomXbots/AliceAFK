@@ -33,7 +33,7 @@
 
 ```console
 Alice@MacBook~ $ git clone https://github.com/venomXbots/AliceAFK
-Alice@MacBook~ $ cd InflexAFKBot
+Alice@MacBook~ $ cd AliceAFK
 Alice@MacBook~ $ pip3 install -r requirements.txt
 Alice@MacBook~ $ mv sample.env .env
 ```
