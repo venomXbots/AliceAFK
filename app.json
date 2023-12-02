@@ -1,5 +1,5 @@
 {
-  "name": "Inflex AFK Bot",
+  "name": "𝘈𝘭𝘪𝘤𝘦𝘈𝘍𝘒",
   "description": "Simple and Powerful Telegram's AFK Bot written in Pyrogram using MongoDB.",
   "logo": "https://telegra.ph/file/78bc88b883b22024002cd.jpg",
   "keywords": [
@@ -17,7 +17,7 @@
       "size": "free"
     }
   },
-  "repository": "https://github.com/TeamInflex/InflexAFKBot",
+  "repository": "https://github.com/venomXbots/AliceAFK",
   "env": {
     "API_ID": {
       "description": "Get this value from my.telegram.org/apps.",
